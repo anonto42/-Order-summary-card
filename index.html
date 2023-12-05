@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/FLogo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+  <style>
+    :root{
+      --PaleBlue: hsl(225, 100%, 94%);
+      --BrightBlue: hsl(245, 75%, 52%);
+      --VeryPaleBlue: hsl(225, 100%, 98%);
+      --DesaTuraTedBlue: hsl(224, 23%, 55%);
+      --Darkblue: hsl(223, 47%, 23%);
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: 'Red Hat Display', sans-serif;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    .backGround{
+      width: 100%;
+      height: 100vh;
+      background-color: var(--PaleBlue);
+    }
+    .container{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 390px;
+      background-color:white;
+      text-align: center;
+      border-radius: 15px;
+      color: var(--Darkblue);
+      box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    }
+    .container img{
+      border-radius: 15px 15px 0px 0px;
+      width: 100%;
+    }
+    .container h1{
+      margin: 10px 0;
+      font-size: 35px;
+      font-weight: 900;
+    }
+    .container p{
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--DesaTuraTedBlue);
+    }
+    .container .plan{
+      margin: 20px auto;
+      display: flex;
+      width: 80%;
+      background-color: var(--VeryPaleBlue);
+      padding: 10px 15px;
+      border-radius: 15px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .container .plan img{
+      width: 50px;
+      height: 50px;
+    }
+    .container .plan .text h2{
+      font-size: 22px;
+    }
+    .container .plan .text p {
+      font-size: 15px;
+    }
+    .container .plan a {
+      color: var(--BrightBlue);
+    }
+    .container button{
+      padding: 20px 45px;
+      border: none;
+      background-color: var(--BrightBlue);
+      font-size: 18px;
+      font-weight: 700px;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    }
+    .container a:hover{
+      color: rgb(126, 126, 229);
+    }
+    .container button:hover{
+      background-color: rgb(126, 126, 229);
+      scale: 1.3 px;
+    }
+    .container .h2 {
+      margin: 20px ;
+      font-size: 20px;
+      color: var(--DesaTuraTedBlue);
+      cursor: pointer;
+    }
+    .container .h2:hover{
+      color: var(--Darkblue);
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="backGround">
+  <img src="images/pattern-background-desktop.svg" alt="">
+<div class="container">
+  <img src="images/illustration-hero.svg">
+  <h1>Order summary</h1>
+  <p>You can now listen to millions<br>of songs, audiobooks, and podcasts on <br> any 
+    device anywhere you like!
+  </p>
+  <div class="plan">
+    <img src="images/icon-music.svg">
+    <div class="text">
+      <h2>Annual Plan</h2>
+      <p>$59.99/year</p>
+    </div>
+    <a href="">Change</a>
+  </div>
+  <button>Proceed to Payment</button>
+  <h2 class="h2">Cancel Order</h2>
+</div>
+</div>
+</body>
+</html>
